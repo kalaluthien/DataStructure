@@ -1,0 +1,53 @@
+Donald Knuth
+From Wikipedia, the free encyclopedia
+Donald Ervin Knuth (born January 10, 1938) is an American computer scientist, mathematician, and Professor Emeritus at Stanford University.[2]
+He is the author of the multi-volume work The Art of Computer Programming.[3] Knuth has been called the "father" of the analysis of algorithms. He contributed to the development of the rigorous analysis of the computational complexity of algorithms and systematized formal mathematical techniques for it. In the process he also popularized the asymptotic notation. In addition to fundamental contributions in several branches of theoretical computer science, Knuth is the creator of the TeX computer typesetting system, the related METAFONT font definition language and rendering system, and the Computer Modern family of typefaces.
+As a writer and scholar,[4] Knuth created the WEB and CWEB computer programming systems designed to encourage and facilitate literate programming, and designed the MIX/MMIX instruction set architectures. As a member of the academic and scientific community, Knuth is strongly opposed to the policy of granting software patents.[5] He has expressed his disagreement directly to both the United States Patent and Trademark Office and European Patent Organization.[6]
+Education
+Knuth had a difficult time choosing physics over music as his major at Case Institute of Technology (now part of Case Western Reserve University). He also joined Beta Nu Chapter of the Theta Chi fraternity. While studying physics at the Case Institute of Technology, Knuth was introduced to the IBM 650, one of the early mainframes. After reading the computer's manual, Knuth decided to rewrite the assembly and compiler code for the machine used in his school, because he believed he could do it better.[8] In 1958, Knuth constructed a program based on the value of each player that could help his school basketball team win the league. This was so novel a proposition at the time that it got picked up and published by Newsweek and also covered by Walter Cronkite on the CBS Evening News.[8] Knuth was one of the founding editors of the Engineering and Science Review, which won a national award as best technical magazine in 1959.[9] He then switched from physics to mathematics, and in 1960 he received his bachelor of science degree, simultaneously being given a master of science degree by a special award of the faculty who considered his work exceptionally outstanding.[8][10]
+In 1963, he earned a PhD in mathematics (advisor: Marshall Hall) from the California Institute of Technology,[11] and began to work there as associate professor and began work on The Art of Computer Programming. He had initially accepted a commission to write a book on compilers which would later become the multi-volume The Art of Computer Programming. This work was originally planned to be a single book, and then planned as a six- and then seven-volume series. In 1968, just before he published the first volume, Knuth accepted a job working on problems for the National Security Agency (NSA) through their FFRDC the Institute for Defense Analyses (IDA) Communications Research Division situated at the time on the Princeton campus. Knuth then left this position and joined the faculty of Stanford University.
+Writings
+The Art of Computer Programming (TAOCP)
+Main article: The Art of Computer Programming
+Computer science was then taking its first hesitant steps. "It was a totally new field," Knuth recalls, "with no real identity. And the standard of available publications was not that high. A lot of the papers coming out were quite simply wrong. [...] So one of my motivations was to put straight a story that had been very badly told."
+After producing the third volume of his series in 1976, he expressed such frustration with the nascent state of the then newly developed electronic publishing tools (especially those that provided input to phototypesetters) that he took time out to work on typesetting and created the TeX and METAFONT tools.
+As of 2013, the first three volumes and part one of volume four of his series have been published.[12]
+Other works
+He is also the author of Surreal Numbers,[13] a mathematical novelette on John Conway's set theory construction of an alternate system of numbers. Instead of simply explaining the subject, the book seeks to show the development of the mathematics. Knuth wanted the book to prepare students for doing original, creative research.
+In 1995, Knuth wrote the foreword to the book A=B by Marko Petkovsek, Herbert Wilf and Doron Zeilberger.[14] Knuth is also an occasional contributor of language puzzles to Word Ways: The Journal of Recreational Linguistics.
+Religious beliefs and work
+In addition to his writings on computer science, Knuth, a Lutheran,[15] is also the author of 3:16 Bible Texts Illuminated,[16] in which he examines the Bible by a process of systematic sampling, namely an analysis of chapter 3, verse 16 of each book. Each verse is accompanied by a rendering in calligraphic art, contributed by a group of calligraphers under the leadership of Hermann Zapf.
+Subsequently he was invited to give a set of lectures on his 3:16 project, resulting in another book, Things a Computer Scientist Rarely Talks About.
+Health concerns
+In 2006, Knuth was diagnosed with prostate cancer. He underwent surgery in December that year and started "a little bit of radiation therapy... as a precaution but the prognosis looks pretty good", as he reported in his video autobiography.[17]
+Computer musings
+Knuth gives informal lectures a few times a year at Stanford University, which he called Computer Musings. He was also a visiting professor at the Oxford University Computing Laboratory (now the Oxford University Department of Computer Science) in the United Kingdom and an Honorary Fellow of Magdalen College.[18]
+Humor 
+Knuth is known for his "professional humor".
+One of Knuth's reward checks
+"Nested parens"-Donald Knuth and Jacob Appelbaum and Donald Knuth
+He used to pay a finder's fee of $2.56 for any typographical errors or mistakes discovered in his books, because "256 pennies is one hexadecimal dollar", and $0.32 for "valuable suggestions". According to an article in the Massachusetts Institute of Technology's Technology Review, these Knuth reward checks are "among computerdom's most prized trophies". Knuth had to stop sending real checks in 2008 due to bank fraud, and instead now gives each error finder a "certificate of deposit" from a publicly listed balance in his fictitious "Bank of San Serriffe".[19]
+He once warned a correspondent, "Beware of bugs in the above code; I have only proved it correct, not tried it."[20]
+The preface of Concrete Mathematics includes the following anecdote: "When Knuth taught Concrete Mathematics at Stanford for the first time, he explained the somewhat strange title by saying that it was his attempt to teach a math course that was hard instead of soft. He announced that, contrary to the expectations of some of his colleagues, he was not going to teach the Theory of Aggregates, nor Stone's Embedding Theorem, nor even the Stone-Cech compactification theorem. (Several students from the civil engineering department got up and quietly left the room.)"
+Knuth published his first "scientific" article in a school magazine in 1957 under the title "Potrzebie System of Weights and Measures." In it, he defined the fundamental unit of length as the thickness of Mad No. 26, and named the fundamental unit of force "whatmeworry." Mad published the article in issue No. 33 (June 1957).[21]
+Knuth's article about the computational complexity of songs, "The Complexity of Songs", was reprinted twice in computer science journals.
+To demonstrate the concept, Knuth intentionally referred "Circular definition" and "Definition, circular" to each other in the index of The Art of Computer Programming, Volume 1.
+At the TUG 2010 Conference,[22] Knuth announced an XML-based successor to TeX, titled "iTeX", which would support features such as arbitrarily scaled irrational units, 3D printing, animation, and stereophonic sound.[23][24]
+Awards
+In 1971, Knuth was the recipient of the first ACM Grace Murray Hopper Award. He has received various other awards including the Turing Award, the National Medal of Science, the John von Neumann Medal, and the Kyoto Prize.
+In recognition of Knuth's contributions to the field of computer science, in 1990 he was awarded the one-of-a-kind academic title of Professor of The Art of Computer Programming, which has since been revised to Professor Emeritus of The Art of Computer Programming.
+Knuth was elected to the National Academy of Sciences in 1975. In 1992, he became an associate of the French Academy of Sciences. Also that year, he retired from regular research and teaching at Stanford University in order to finish The Art of Computer Programming. In 2003 he was elected as a foreign member of the Royal Society.
+Knuth was elected as a Fellow (first class of Fellows) of the Society for Industrial and Applied Mathematics in 2009 for his outstanding contributions to mathematics.[25] He is a member of the Norwegian Academy of Science and Letters.[26] In 2012, he became a fellow of the American Mathematical Society.[27]
+Honors bestowed on Knuth include:
+First ACM Grace Murray Hopper Award, 1971
+Turing Award, 1974
+Josiah Willard Gibbs Lecturer, 1978[28][29]
+National Medal of Science, 1979
+Franklin Medal, 1988
+John von Neumann Medal, 1995
+Harvey Prize from the Technion, 1995[30]
+Kyoto Prize, 1996
+Fellow of the Computer History Museum, 1998
+Katayanagi Prize, 2010[31]
+BBVA Foundation Frontiers of Knowledge Award, 2010[32]
+Stanford University School of Engineering Hero Award, 2011[33]
