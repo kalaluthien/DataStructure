@@ -67,7 +67,7 @@ public class SortingTest
           case 'X':
             return;
           default:
-            throw new IOException("잘못된 정렬 방법을 입력했습니다.");
+            throw new IOException("ERROR");
         }
         if (isRandom)
           System.out.println((System.currentTimeMillis() - t) + " ms");
@@ -80,7 +80,7 @@ public class SortingTest
     }
     catch (IOException e)
     {
-      System.out.println("ERROR: " + e.toString());
+      System.out.println("ERROR");
     }
   }
 
