@@ -31,7 +31,6 @@ public class MovieDBItem
   {
     if (this.genre == null || this.title == null)
       throw new NullPointerException();
-
     if (other == null || other.genre == null || other.title == null)
       throw new NullPointerException();
 

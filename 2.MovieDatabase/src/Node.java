@@ -1,7 +1,6 @@
 import java.util.NoSuchElementException;
 
 public class Node<T>
-  
 {
   private T item;
   private Node<T> next;
@@ -28,14 +27,14 @@ public class Node<T>
     this.item = item;
   }
 
-  public final void setNext(Node<T> next)
-  {
-    this.next = next;
-  }
-
   public Node<T> getNext()
   {
     return this.next;
+  }
+
+  public final void setNext(Node<T> next)
+  {
+    this.next = next;
   }
 
   public final void insertNext(T obj)
