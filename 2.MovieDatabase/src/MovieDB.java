@@ -61,7 +61,6 @@ public class MovieDB
       {
         resultList.insert(item);
       }
-      subList.removeAll();
     }
 
     return resultList;
@@ -78,7 +77,6 @@ public class MovieDB
       {
         resultList.insert(item);
       }
-      subList.removeAll();
     }
 
     return resultList;
