@@ -3,7 +3,7 @@ import java.util.NoSuchElementException;
 
 public class MovieDB
 {
-  MyLinkedList<Genre> l;
+  private MyLinkedList<Genre> l;
 
   public MovieDB()
   {
@@ -13,32 +13,43 @@ public class MovieDB
   public void insert(MovieDBItem item)
   {
     Genre targetGenre = new Genre(item.getGenre());
+    boolean isNewGenre = true;
+
     for (Genre genre : l)
     {
-      if (targetGrenre.equals(genre))
+      if (targetGenre.equals(genre))
       {
         genre.insert(item.getTitle());
-        return;
+        isNewGenre = false;
+        break;
       }
     }
 
-    targetGenre.insert(item.getTitle());
-    l.add(targetGenre);
+    if (isNewGenre)
+    {
+      targetGenre.insert(item.getTitle());
+      l.insert(targetGenre);
+    }
   }
 
   public void delete(MovieDBItem item)
   {
     Genre targetGenre = new Genre(item.getGenre());
+
     for (Genre genre : l)
     {
       if (targetGenre.equals(genre))
       {
         genre.delete(item.getTitle());
+
         if (!genre.isVaild())
           l.delete(genre);
-        return;
+
+        break;
       }
     }
+
+    System.out.println();
   }
 
   public MyLinkedList<MovieDBItem> search(String term)
@@ -48,8 +59,11 @@ public class MovieDB
     for (Genre genre : l)
     {
       MyLinkedList<MovieDBItem> subList = genre.search(term);
-      for (MovieDBItm item : subList)
+      for (MovieDBItem item : subList)
+      {
         resultList.insert(item);
+      }
+      subList.removeAll();
     }
 
     return resultList;
@@ -63,7 +77,10 @@ public class MovieDB
     {
       MyLinkedList<MovieDBItem> subList = genre.index();
       for (MovieDBItem item : subList)
+      {
         resultList.insert(item);
+      }
+      subList.removeAll();
     }
 
     return resultList;
@@ -113,6 +130,12 @@ class Genre
   public boolean isVaild()
   {
     return !l.isEmpty();
+  }
+
+  @Override
+  public String toString()
+  {
+    return name;
   }
 
   @Override

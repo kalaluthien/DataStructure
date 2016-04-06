@@ -39,8 +39,16 @@ public class MyLinkedList<T extends Comparable<T>>
   public void insert(T item)
   {
     Node<T> last = head;
+
     while (last.hasNext())
     {
+      T nextItem = last.getNext().getItem();
+
+      if (item.compareTo(nextItem) < 0)
+        break;
+      else if (item.equals(nextItem))
+        return;
+
       last = last.getNext();
     }
 
@@ -52,13 +60,21 @@ public class MyLinkedList<T extends Comparable<T>>
   public void delete(T item)
   {
     Node<T> last = head;
-    while (last.hasNext() && last.getNext().hasNext())
+    while (last.hasNext())
     {
+      T nextItem = last.getNext().getItem();
+
+      if (item.compareTo(nextItem) < 0)
+        return;
+      else if (item.equals(nextItem))
+      {
+        last.removeNext();
+        numItems--;
+        return;
+      }
+
       last = last.getNext();
     }
-
-    last.removeNext();
-    numItems--;
   }
 
   @Override
@@ -66,9 +82,20 @@ public class MyLinkedList<T extends Comparable<T>>
   {
     head.setNext(null);
   }
+
+  public void print()
+  {
+    System.out.println();
+    System.out.println("[List size] " + numItems);
+    for (T item : this)
+    {
+      System.out.println("[" + item.toString() + "]");
+    }
+    System.out.println();
+  }
 }
 
-class MyLinkedListIterator<T>
+class MyLinkedListIterator<T extends Comparable<T>>
   implements Iterator<T>
 {
   private MyLinkedList<T> list;

@@ -45,8 +45,6 @@ class DeleteCmd
   public void apply(MovieDB db)
     throws Exception
   {
-    System.err.printf("[trace] DELETE [genre=%s, title=%s]\n", genre, movie);
-
     db.delete(new MovieDBItem(genre, movie));
   }
 }
@@ -72,7 +70,6 @@ class InsertCmd
   public void apply(MovieDB db)
     throws Exception
   {
-    System.err.printf("[trace] INSERT [genre=%s, title=%s]\n", genre, movie);
     db.insert(new MovieDBItem(genre, movie));
   }
 }
@@ -93,8 +90,6 @@ class PrintCmd
   public void apply(MovieDB db)
     throws Exception
   {
-    System.err.printf("[trace] PRINT\n");
-
     MyLinkedList<MovieDBItem> result = db.items();
 
     if (result.size() == 0)
@@ -126,8 +121,6 @@ class SearchCmd
   public void apply(MovieDB db)
     throws Exception
   {
-    System.err.printf("[trace] SEARCH [%s]\n", term);
-
     MyLinkedList<MovieDBItem> result = db.search(term);
 
     if (result.size() == 0)

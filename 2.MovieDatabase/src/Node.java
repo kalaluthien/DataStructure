@@ -19,12 +19,17 @@ public class Node<T>
 
   public T getItem()
   {
-    return item;
+    return this.item;
   }
 
   public void setItem(T item)
   {
     this.item = item;
+  }
+
+  public boolean hasItem()
+  {
+    return this.item != null;
   }
 
   public Node<T> getNext()

@@ -27,6 +27,12 @@ public class MovieDBItem
   }
 
   @Override
+  public String toString()
+  {
+    return '(' + genre + ", " + title + ')';
+  }
+
+  @Override
   public int compareTo(MovieDBItem other)
   {
     if (this.genre == null || this.title == null)
