@@ -17,12 +17,12 @@ public class Node<T>
     this.next = next;
   }
 
-  public final T getItem()
+  public T getItem()
   {
     return item;
   }
 
-  public final void setItem(T item)
+  public void setItem(T item)
   {
     this.item = item;
   }
@@ -32,18 +32,23 @@ public class Node<T>
     return this.next;
   }
 
-  public final void setNext(Node<T> next)
+  public void setNext(Node<T> next)
   {
     this.next = next;
   }
 
-  public final void insertNext(T obj)
+  public boolean hasNext()
+  {
+    return next != null;
+  }
+
+  public void insertNext(T obj)
   {
     Node<T> newNode = new Node<T>(obj, next);
     this.next = newNode;
   }
 
-  public final void removeNext()
+  public void removeNext()
   {
     if (this.next == null)
       throw new NoSuchElementException();

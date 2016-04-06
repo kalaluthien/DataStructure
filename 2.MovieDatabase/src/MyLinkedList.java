@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class MyLinkedList<T>
+public class MyLinkedList<T extends Comparable<T>>
   implements ListInterface<T>
 {
   Node<T> head;
@@ -36,14 +36,29 @@ public class MyLinkedList<T>
   }
 
   @Override
-  public void add(T item)
+  public void insert(T item)
   {
     Node<T> last = head;
-    while (last.getNext() != null)
+    while (last.hasNext())
+    {
       last = last.getNext();
+    }
 
     last.insertNext(item);
     numItems++;
+  }
+
+  @Override
+  public void delete(T item)
+  {
+    Node<T> last = head;
+    while (last.hasNext() && last.getNext().hasNext())
+    {
+      last = last.getNext();
+    }
+
+    last.removeNext();
+    numItems--;
   }
 
   @Override

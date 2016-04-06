@@ -6,7 +6,9 @@ public interface ListInterface<T>
 
   public int size();
 
-  public void add(T item);
+  public void insert(T item);
+
+  public void delete(T item);
 
   public T first();
 
