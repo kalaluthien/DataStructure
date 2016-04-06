@@ -48,8 +48,6 @@ public class MovieDB
         break;
       }
     }
-
-    System.out.println();
   }
 
   public MyLinkedList<MovieDBItem> search(String term)
