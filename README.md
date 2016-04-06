@@ -4,9 +4,5 @@ DataStructure
 > 2016.03 ~ 2016.05
 
 ## Contents
-* **BigInteger**
-* MovieDatabase
-* StackCalculator
-* Sorting
-* Matching
-* Subway
+* MovieDatabase example code
+* MovieDatabase testcases
