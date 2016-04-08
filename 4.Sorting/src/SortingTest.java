@@ -11,6 +11,7 @@ public class SortingTest
     {
       boolean isRandom = false;
       int[] value;
+
       String nums = br.readLine();
       if (nums.charAt(0) == 'r')
       {
@@ -39,7 +40,7 @@ public class SortingTest
 
       while (true)
       {
-        int[] newvalue = (int[])value.clone();
+        int[] newvalue = (int[]) value.clone();
 
         String command = br.readLine();
 
@@ -86,31 +87,145 @@ public class SortingTest
 
   private static int[] DoBubbleSort(int[] value)
   {
-    return (value);
+    for (int last = value.length - 1; last > 0; last--)
+      for (int start = 0; start < last; start++)
+        if (value[start] > value[start + 1])
+          swap(value, start, start + 1);
+
+    return value;
   }
 
   private static int[] DoInsertionSort(int[] value)
   {
-    return (value);
+    for (int last = 1; last < value.length; last++)
+    {
+      int start = 0;
+      while (start < last && value[start] <= value[last])
+        start++;
+
+      if (start < last)
+        shift(value, start, last);
+    }
+
+    return value;
   }
 
   private static int[] DoHeapSort(int[] value)
   {
-    return (value);
+    for (int start = value.length / 2; start >= 0; start--)
+      percolateDown(value, start, value.length - 1);
+
+    for (int last = value.length - 1; last > 0; last--)
+    {
+      swap(value, 0, last);
+      percolateDown(value, 0, last - 1);
+    }
+
+    return value;
+  }
+
+  private static void percolateDown(int[] value, int start, int last)
+  {
+    int parent = start;
+    int left = 2 * parent + 1;
+    int right = left + 1;
+
+    if (left <= last && value[parent] < value[left])
+      parent = left;
+    if (right <= last && value[parent] < value[right])
+      parent = right;
+
+    if (parent != start)
+    {
+      swap(value, parent, start);
+      percolateDown(value, parent, last);
+    }
   }
 
   private static int[] DoMergeSort(int[] value)
   {
-    return (value);
+    splitAndMerge(value, 0, value.length - 1);
+    return value;
+  }
+
+  private static void splitAndMerge(int[] value, int start, int last)
+  {
+    if (start >= last)
+      return;
+
+    int mid = (start + last) / 2;
+    splitAndMerge(value, start, mid);
+    splitAndMerge(value, mid + 1, last);
+    merge(value, start, last);
+  }
+
+  private static void merge(int[] value, int start, int last)
+  {
+    int mid = (start + last) / 2;
+
+    while (start <= mid && mid < last)
+    {
+      if (value[start] <= value[mid + 1])
+        start++;
+      else
+      {
+        shift(value, start, mid + 1);
+        start++;
+        mid++;
+      }
+    }
   }
 
   private static int[] DoQuickSort(int[] value)
   {
-    return (value);
+    partitionAndDivide(value, 0, value.length - 1);
+    return value;
+  }
+
+  private static void partitionAndDivide(int[] value, int start, int last)
+  {
+    if (start >= last)
+      return;
+
+    int mid = partition(value, start, last);
+    partitionAndDivide(value, start, mid);
+    partitionAndDivide(value, mid + 1, last);
+  }
+
+  private static int partition(int[] value, int start, int last)
+  {
+    int pivot = value[start];
+
+    while (true)
+    {
+      while (value[start] < pivot)
+        start++;
+      while (pivot < value[last])
+        last--;
+
+      if (start < last)
+        swap(value, start++, last--);
+      else
+        return last;
+    }
   }
 
   private static int[] DoRadixSort(int[] value)
   {
-    return (value);
+    return value;
+  }
+
+  private static void swap(int[] value, int i, int j)
+  {
+    int temp = value[i];
+    value[i] = value[j];
+    value[j] = temp;
+  }
+
+  private static void shift(int[] value, int start, int last)
+  {
+    int temp = value[last];
+    System.arraycopy(value, start, value, start + 1, last - start);
+    value[start] = temp;
   }
 }
