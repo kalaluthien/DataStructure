@@ -144,18 +144,18 @@ public class SortingTest
 
   private static int[] DoMergeSort(int[] value)
   {
-    splitAndMerge(value, 0, value.length - 1);
+    mergeSort(value, 0, value.length - 1);
     return value;
   }
 
-  private static void splitAndMerge(int[] value, int start, int last)
+  private static void mergeSort(int[] value, int start, int last)
   {
     if (start >= last)
       return;
 
     int mid = (start + last) / 2;
-    splitAndMerge(value, start, mid);
-    splitAndMerge(value, mid + 1, last);
+    mergeSort(value, start, mid);
+    mergeSort(value, mid + 1, last);
     merge(value, start, last);
   }
 
@@ -178,23 +178,24 @@ public class SortingTest
 
   private static int[] DoQuickSort(int[] value)
   {
-    partitionAndDivide(value, 0, value.length - 1);
+    Random rand = new Random();
+    quickSort(value, 0, value.length - 1, rand);
     return value;
   }
 
-  private static void partitionAndDivide(int[] value, int start, int last)
+  private static void quickSort(int[] value, int start, int last, Random rand)
   {
     if (start >= last)
       return;
 
-    int mid = partition(value, start, last);
-    partitionAndDivide(value, start, mid);
-    partitionAndDivide(value, mid + 1, last);
+    int mid = partition(value, start, last, rand);
+    quickSort(value, start, mid, rand);
+    quickSort(value, mid + 1, last, rand);
   }
 
-  private static int partition(int[] value, int start, int last)
+  private static int partition(int[] value, int start, int last, Random rand)
   {
-    int pivot = value[start];
+    int pivot = value[rand.nextInt(last - start) + start];
 
     while (true)
     {
