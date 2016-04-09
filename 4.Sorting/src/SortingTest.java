@@ -90,7 +90,7 @@ public class SortingTest
     for (int last = value.length - 1; last > 0; last--)
       for (int start = 0; start < last; start++)
         if (value[start] > value[start + 1])
-          swap(value, start, start + 1);
+          arraySwap(value, start, start + 1);
 
     return value;
   }
@@ -104,7 +104,7 @@ public class SortingTest
         start++;
 
       if (start < last)
-        shift(value, start, last);
+        arrayShift(value, start, last);
     }
 
     return value;
@@ -117,7 +117,7 @@ public class SortingTest
 
     for (int last = value.length - 1; last > 0; last--)
     {
-      swap(value, 0, last);
+      arraySwap(value, 0, last);
       percolateDown(value, 0, last - 1);
     }
 
@@ -137,7 +137,7 @@ public class SortingTest
 
     if (parent != start)
     {
-      swap(value, parent, start);
+      arraySwap(value, parent, start);
       percolateDown(value, parent, last);
     }
   }
@@ -169,7 +169,7 @@ public class SortingTest
         start++;
       else
       {
-        shift(value, start, mid + 1);
+        arrayShift(value, start, mid + 1);
         start++;
         mid++;
       }
@@ -205,7 +205,7 @@ public class SortingTest
         last--;
 
       if (start < last)
-        swap(value, start++, last--);
+        arraySwap(value, start++, last--);
       else
         return last;
     }
@@ -213,17 +213,57 @@ public class SortingTest
 
   private static int[] DoRadixSort(int[] value)
   {
+    int maxValue = 0, maxDigit = 1;
+
+    for (int i = 0; i < value.length; i++)
+    {
+      int curr = value[i] < 0 ? value[i] : -value[i];
+      if (maxValue > curr)
+        maxValue = curr;
+    }
+
+    for (maxValue /= 10; maxValue < 0; maxValue /= 10)
+      maxDigit *= 10;
+
+    value = radixSort(value, maxDigit);
+
     return value;
   }
 
-  private static void swap(int[] value, int i, int j)
+  private static int[] radixSort(int[] value, int maxDigit)
+  {
+    int[] count = new int[19];
+    int[] bucket = new int[value.length];
+
+    for (int digit = 1; digit <= maxDigit; digit *= 10)
+    {
+      Arrays.fill(count, 0);
+
+      for (int i = 0; i < value.length; i++)
+        count[(value[i] / digit) % 10 + 9]++;
+
+      for (int i = 1; i < count.length; i++)
+        count[i] += count[i - 1];
+
+      for (int i = value.length - 1; i >= 0; i--)
+        bucket[--count[(value[i] / digit) % 10 + 9]] = value[i];
+
+      int[] temp = value;
+      value = bucket;
+      bucket = temp;
+    }
+    
+    return value;
+  }
+
+  private static void arraySwap(int[] value, int i, int j)
   {
     int temp = value[i];
     value[i] = value[j];
     value[j] = temp;
   }
 
-  private static void shift(int[] value, int start, int last)
+  private static void arrayShift(int[] value, int start, int last)
   {
     int temp = value[last];
     System.arraycopy(value, start, value, start + 1, last - start);
