@@ -6,7 +6,7 @@ DataStructure
 > 2016.03 ~ 2016.05
 
 ### Sites
-[Course Homepage](http://soar.snu.ac.kr/course.html)
+[Course Homepage](http://soar.snu.ac.kr/course.html)  
 [Assignment Homepage](http://soar.snu.ac.kr:8080/)
 
 ## Contents
