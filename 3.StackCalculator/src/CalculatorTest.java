@@ -112,65 +112,55 @@ public class CalculatorTest
     {
       String tokenString = m.group();
 
-      if (isBeforeNumber)
+      switch (tokenString.charAt(0))
       {
-        switch (tokenString.charAt(0))
-        {
-          case '+': case '*': case '/': case '%': case '^':
-            throw new Exception();
-          case '-':
-            stackOper("~", tokens, opers);
-            break;
-          case '(':
-            opers.push(new Token(tokenString));
-            break;
-          default:
+        case '-':
+          if (isBeforeNumber)
+          {
             isBeforeNumber = false;
-            tokens.add(new Token(Long.parseLong(tokenString)));
-            break;
-        }
-      }
-      else
-      {
-        switch (tokenString.charAt(0))
-        {
-          case '+': case '-': case '*': case '/': case '%': case '^':
-            isBeforeNumber = true;
-            stackOper(tokenString, tokens, opers);
-            break;
-          case ')':
-            boolean isMatched = false;
-
-            while (!opers.empty())
-            {
-              Token top = opers.peek();
-              if (top.type == Type.PAREN)
-              {
-                opers.pop();
-                isMatched = true;
-                break;
-              }
-              tokens.add(opers.pop());
-            }
-
-            if (isMatched)
-              break;
-          default:
+            tokenString = "~";
+          }
+        case '+': case '*': case '/': case '%': case '^':
+          if (isBeforeNumber)
             throw new Exception();
-        }
+
+          isBeforeNumber = true;
+          arrangeOpers(tokenString, tokens, opers);
+          break;
+        case '(':
+          if (!isBeforeNumber)
+            throw new Exception();
+
+          opers.push(new Token(tokenString));
+          break;
+        case ')':
+          if (isBeforeNumber)
+            throw new Exception();
+          
+          if (!arrangeParens(tokens, opers))
+            throw new Exception();
+
+          break;
+        default:
+          if (!isBeforeNumber)
+            throw new Exception();
+
+          isBeforeNumber = false;
+          tokens.add(new Token(Long.parseLong(tokenString)));
+          break;
       }
     }
-
-    while (!opers.empty())
-      tokens.add(opers.pop());
 
     if (isBeforeNumber)
       throw new Exception();
 
+    while (!opers.empty())
+      tokens.add(opers.pop());
+
     return tokens;
   }
 
-  private static void stackOper
+  private static void arrangeOpers
     (String tokenString, ArrayList<Token> tokens, Stack<Token> opers)
   {
     Token token = new Token(tokenString);
@@ -188,6 +178,26 @@ public class CalculatorTest
       tokens.add(opers.pop());
     }
     opers.push(token);
+  }
+
+  private static boolean arrangeParens
+    (ArrayList<Token> tokens, Stack<Token> opers)
+  {
+    boolean isMatched = false;
+
+    while (!opers.empty())
+    {
+      Token top = opers.peek();
+      if (top.type == Type.PAREN)
+      {
+        opers.pop();
+        isMatched = true;
+        break;
+      }
+      tokens.add(opers.pop());
+    }
+
+    return isMatched;
   }
 
   private static long evaluate(ArrayList<Token> tokens)
