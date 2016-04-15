@@ -3,8 +3,7 @@ DataStructure
 
 #### Assignments and testcases
 > 2013-11394 김형모  
-> Thanks to 컴공13, 컴공08  
-> 2016.03 ~ 2016.05
+> Thanks to 컴공13, 컴공08
 
 #### Sites
 [Course Homepage](http://soar.snu.ac.kr/course.html)  
