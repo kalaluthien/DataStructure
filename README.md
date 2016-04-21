@@ -2,7 +2,6 @@ DataStructure
 ===
 
 ![Moon](http://img.newspim.com/content/image/2013/07/23/20130723000171_0.jpg)
-> "100년내로는 컴퓨터 바둑이 못 이긴다."
 
 #### Assignments and testcases
 > 2013-11394 김형모
