@@ -34,6 +34,6 @@ DataStructure
    * [testcases](https://github.com/kalaluthien/DataStructure/tree/master/5.Matching/test)
 6. **Subway**
    * ~~example code~~
-   * [tesetcases](https://github.com/kalaluthien/DataStructure/tree/master/6.Subway/test)
+   * [tesetcases](https://github.com/kalaluthien/DataStructure/tree/master/6.Subway)
 
 # DO NOT COPY EXAMPLE CODE
