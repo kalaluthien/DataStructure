@@ -21,7 +21,7 @@ DataStructure
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/2.MovieDatabase/src)
    * [tesetcases](https://github.com/kalaluthien/DataStructure/tree/master/2.MovieDatabase/test)
 3. **StackCalculator**
-   * ~~example code~~
+   * [example code](https://github.com/kalaluthien/DataStructure/tree/StackCalculator)
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/3.StackCalculator/src)
    * [testcases](https://github.com/kalaluthien/DataStructure/tree/master/3.StackCalculator/test)
 4. **Sorting**
