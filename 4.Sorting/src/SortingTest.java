@@ -85,6 +85,9 @@ public class SortingTest
     }
   }
 
+  private static int[] count;
+  private static int[] bucket;
+
   private static int[] DoBubbleSort(int[] value)
   {
     for (int last = value.length - 1; last > 0; last--)
@@ -99,12 +102,16 @@ public class SortingTest
   {
     for (int last = 1; last < value.length; last++)
     {
-      int start = 0;
-      while (start < last && value[start] <= value[last])
-        start++;
+      int saved = value[last];
+      int index = last - 1;
 
-      if (start < last)
-        arrayShift(value, start, last);
+      while (index >= 0 && value[index] > saved)
+      {
+        value[index + 1] = value[index];
+        index--;
+      }
+
+      value[index + 1] = saved;
     }
 
     return value;
@@ -144,6 +151,7 @@ public class SortingTest
 
   private static int[] DoMergeSort(int[] value)
   {
+    bucket = new int[value.length];
     mergeSort(value, 0, value.length - 1);
     return value;
   }
@@ -161,19 +169,29 @@ public class SortingTest
 
   private static void merge(int[] value, int start, int last)
   {
+    int index = start;
     int mid = (start + last) / 2;
+    int fstStart = start;
+    int sndStart = mid + 1;
 
-    while (start <= mid && mid < last)
+    while (fstStart <= mid && sndStart <= last)
     {
-      if (value[start] <= value[mid + 1])
-        start++;
+      if (value[fstStart] <= value[sndStart])
+        bucket[index++] = value[fstStart++];
       else
-      {
-        arrayShift(value, start, mid + 1);
-        start++;
-        mid++;
-      }
+        bucket[index++] = value[sndStart++];
     }
+
+    while (fstStart <= mid || sndStart <= last)
+    {
+      if (fstStart <= mid)
+        bucket[index++] = value[fstStart++];
+      else
+        bucket[index++] = value[sndStart++];
+    }
+
+    for (index--; start <= index; index--)
+      value[index] = bucket[index];
   }
 
   private static int[] DoQuickSort(int[] value)
@@ -214,6 +232,8 @@ public class SortingTest
   private static int[] DoRadixSort(int[] value)
   {
     int maxValue = 0, maxDigit = 1;
+    count = new int[19];
+    bucket = new int[value.length];
 
     for (int i = 0; i < value.length; i++)
     {
@@ -232,8 +252,7 @@ public class SortingTest
 
   private static int[] radixSort(int[] value, int maxDigit)
   {
-    int[] count = new int[19];
-    int[] bucket = new int[value.length];
+    Arrays.fill(bucket, 0);
 
     for (int digit = 1; digit <= maxDigit; digit *= 10)
     {
@@ -261,12 +280,5 @@ public class SortingTest
     int temp = value[i];
     value[i] = value[j];
     value[j] = temp;
-  }
-
-  private static void arrayShift(int[] value, int start, int last)
-  {
-    int temp = value[last];
-    System.arraycopy(value, start, value, start + 1, last - start);
-    value[start] = temp;
   }
 }
