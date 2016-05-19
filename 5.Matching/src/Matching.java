@@ -2,9 +2,12 @@ import java.io.*;
 
 public class Matching
 {
+  public static final int SAMPLING_LENGTH = 6;
+
   public static void main(String args[])
   {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    Database db = new Database();
 
     while (true)
     {
@@ -14,16 +17,30 @@ public class Matching
         if (input.compareTo("QUIT") == 0)
           break;
 
-        command(input);
+        excuteCommand(db, input);
       }
-      catch (IOException e)
+      catch (Exception e)
       {
         System.out.println("ERROR: " + e.toString());
       }
     }
   }
 
-  private static void command(String input)
+  private static void excuteCommand(Database db, String input)
+    throws Exception
   {
+    Command command = null;
+    String arg = input.substring(2);
+
+    if (input.startsWith("< "))
+      command = new InitCmd(arg);
+    else if (input.startsWith("@ "))
+      command = new PrintCmd(arg);
+    else if (input.startsWith("? "))
+      command = new SearchCmd(arg);
+    else
+      throw new Exception(input);
+
+    command.apply(db);
   }
 }
