@@ -21,7 +21,7 @@ public class Database
     throws Exception
   {
     if (input.length() != Matching.SAMPLING_LENGTH)
-      throw new Exception(input);
+      throw new Exception(input + ": sampling length mismatch.");
 
     table[hash(input)].insert(input);
   }
@@ -38,7 +38,7 @@ public class Database
     throws Exception
   {
     if (pattern.length() < Matching.SAMPLING_LENGTH)
-      throw new Exception(pattern);
+      throw new Exception(pattern + ": too short search pattern.");
 
     /* TODO */
   }

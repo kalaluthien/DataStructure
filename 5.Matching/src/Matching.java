@@ -39,7 +39,7 @@ public class Matching
     else if (input.startsWith("? "))
       command = new SearchCmd(arg);
     else
-      throw new Exception(input);
+      throw new Exception(input + ": invaild command.");
 
     command.apply(db);
   }

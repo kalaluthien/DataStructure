@@ -25,14 +25,11 @@ class InitCmd
 
     db.initTable();
 
-    while (true)
+    String line = br.readLine();
+    while (line != null)
     {
-      String line = br.readLine();
-
-      if (line == null)
-        break;
-
       addLine(db, line);
+      line = br.readLine();
     }
   }
 
@@ -41,7 +38,7 @@ class InitCmd
   {
     for (int i = 0; i <= line.length() - Matching.SAMPLING_LENGTH; i++)
     {
-      String subs = line.substring(i, i + Matching.SAMPLING_LENGTH - 1);
+      String subs = line.substring(i, i + Matching.SAMPLING_LENGTH);
       db.insert(subs);
     }
   }
