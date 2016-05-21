@@ -48,16 +48,29 @@ public class List<T extends Comparable<T>>
 
   public void print()
   {
+    if (isEmpty())
+    {
+      System.out.println("(0, 0)");
+      return;
+    }
+
     Node<T> curr = head;
     StringBuilder sb = new StringBuilder();
+    boolean isFirst = true;
 
     while (curr.hasNext())
     {
       curr = curr.getNext();
-      sb.append(' ' + curr.getItem().toString());
+
+      if (isFirst)
+        isFirst = false;
+      else
+        sb.append(" ");
+
+      sb.append(curr.getItem());
     }
 
-    System.out.println(sb.toString().substring(1));
+    System.out.println(sb);
   }
 }
 

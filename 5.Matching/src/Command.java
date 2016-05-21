@@ -94,7 +94,7 @@ class SearchCmd
     throws Exception
   {
     Position[][] steps = new Position[args.length][];
-    StringBuilder sb = new StringBuilder();
+    List<Position> result = new List<Position>();
 
     initSteps(steps, db);
 
@@ -127,13 +127,10 @@ class SearchCmd
       }
 
       if (found)
-        sb.append(" " + steps[0][i].toString());
+        result.insert(steps[0][i]);
     }
 
-    if (sb.length() == 0)
-      System.out.println("(0, 0)");
-    else
-      System.out.println(sb.toString().substring(1));
+    result.print();
   }
 
   private void initSteps(Position[][] steps, Database db)

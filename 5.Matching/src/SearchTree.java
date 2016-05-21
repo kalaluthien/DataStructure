@@ -34,7 +34,7 @@ public class SearchTree
 
     String output = root.toString().substring(1);
     //System.out.println(output);
-    root.printTree("  ");
+    root.printTree("");
   }
 
   public boolean isEmpty()
