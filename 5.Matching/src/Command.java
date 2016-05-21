@@ -66,25 +66,22 @@ class SearchCmd
   implements Command
 {
   private String[] args;
+  private final int offset;
+  private static final Position[] empty = new Position[0];
 
   public SearchCmd(String arg)
   {
-    int length = arg.length() / Matching.SAMPLING_LENGTH;
-    int offset = arg.length() % Matching.SAMPLING_LENGTH;
-
-    args = new String[length + (offset > 0 ? 1 : 0)];
-    splitArg(arg, length, offset);
-  }
-
-  private void splitArg(String arg, int length, int offset)
-  {
     int sl = Matching.SAMPLING_LENGTH;
+    int length = arg.length() / sl;
+    offset = arg.length() % sl;
+    args = new String[length + (offset > 0 ? 1 : 0)];
 
     for (int i = 0; i < length; i++)
     {
       String subs = arg.substring(i * sl, i * sl + sl);
       args[i] = subs;
     }
+
     if (offset > 0)
     {
       int start = length * sl - sl + offset;
@@ -96,24 +93,70 @@ class SearchCmd
   public void apply(Database db)
     throws Exception
   {
-    List<List<Position>> l = new List<List<Position>>();
+    Position[][] steps = new Position[args.length][];
+    StringBuilder sb = new StringBuilder();
 
+    initSteps(steps, db);
+
+    for (int i = 0; i < steps[0].length; i++)
+    {
+      Position curr = steps[0][i];
+      boolean found = true;
+
+      for (int level = 1; level < args.length; level++)
+      {
+        Position[] nexts = steps[level];
+        found = false;
+
+        int cposdiff;
+        if (offset != 0 && level == args.length - 1)
+          cposdiff = offset;
+        else
+          cposdiff = Matching.SAMPLING_LENGTH;
+
+        for (int j = 0; j < nexts.length; j++)
+          if (curr.neighbor(nexts[j], cposdiff))
+          {
+            found = true;
+            curr = nexts[j];
+            break;
+          }
+
+        if (!found)
+          break;
+      }
+
+      if (found)
+        sb.append(" " + steps[0][i].toString());
+    }
+
+    if (sb.length() == 0)
+      System.out.println("(0, 0)");
+    else
+      System.out.println(sb.toString().substring(1));
+  }
+
+  private void initSteps(Position[][] steps, Database db)
+    throws Exception
+  {
     for (int i = 0; i < args.length; i++)
-      l.insert(db.search(args[0]));
+    {
+      List<Position> l = db.search(args[i]);
+
+      if (l.isEmpty())
+      {
+        steps[i] = empty;
+        continue;
+      }
+
+      steps[i] = new Position[l.size()];
+
+      int j = 0;
+      for (Position pos : l)
+      {
+        steps[i][j] = pos;
+        j++;
+      }
+    }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,6 +2,8 @@ import java.util.*;
 
 public class SearchTree
 {
+  public static final List<Position> empty = new List<Position>();
+
   TreeNode root;
 
   public SearchTree()
@@ -20,12 +22,7 @@ public class SearchTree
   public List<Position> search(String input)
   {
     if (isEmpty())
-    {
-      List<Position> empty = new List<Position>();
-      empty.insert(new Position(0, 0));
-
       return empty;
-    }
 
     return root.search(input);
   }
@@ -88,14 +85,14 @@ class TreeNode
     if (comp < 0)
     {
       if (left == null)
-        return null;
+        return SearchTree.empty;
 
       return left.search(subs);
     }
     else if (comp > 0)
     {
       if (right == null)
-        return null;
+        return SearchTree.empty;
 
       return right.search(subs);
     }
@@ -123,10 +120,10 @@ class TreeNode
     System.out.println(indent + '[' + subs + ']');
 
     if (left != null)
-      left.printTree(' ' + indent + "L:  ");
+      left.printTree(indent + "L:  ");
 
     if (right != null)
-      right.printTree(' ' + indent + "R:  ");
+      right.printTree(indent + "R:  ");
   }
 }
 

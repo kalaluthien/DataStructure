@@ -15,7 +15,7 @@ public class Position
   public boolean neighbor(Position other, int offset)
   {
     boolean lineCond = this.line == other.line;
-    boolean cposCond = this.cpos + offset == other.cpos;
+    boolean cposCond = (this.cpos + offset) == other.cpos;
 
     return lineCond && cposCond;
   }
@@ -23,7 +23,7 @@ public class Position
   @Override
   public String toString()
   {
-    return '(' + line + ", " + cpos + ')';
+    return "(" + line + ", " + cpos + ")";
   }
 
   @Override

@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class List<T extends Comparable<T>>
-  implements Comparable<List<T>>
+  implements Iterable<T>
 {
   Node<T> head;
   int numItems;
@@ -9,6 +9,11 @@ public class List<T extends Comparable<T>>
   public List()
   {
     head = new Node<T>(null);
+  }
+
+  public final Iterator<T> iterator()
+  {
+    return new ListIterator<T>(this);
   }
 
   public boolean isEmpty()
@@ -41,20 +46,6 @@ public class List<T extends Comparable<T>>
     numItems++;
   }
 
-  public Object[] toArray()
-  {
-    Object[] array = new Object[numItems];
-
-    Node<T> curr = head;
-    for (int i = 0; curr.hasNext(); i++)
-    {
-      curr = curr.getNext();
-      array[i] = curr.getItem();
-    }
-
-    return array;
-  }
-
   public void print()
   {
     Node<T> curr = head;
@@ -68,29 +59,38 @@ public class List<T extends Comparable<T>>
 
     System.out.println(sb.toString().substring(1));
   }
+}
 
-  @Override
-  public int compareTo(List<T> other)
+class ListIterator<T extends Comparable<T>>
+  implements Iterator<T>
+{
+  private Node<T> curr;
+
+  public ListIterator(List<T> list)
   {
-    return 0;
+    this.curr = list.head;
   }
 
   @Override
-  public boolean equals(Object obj)
+  public boolean hasNext()
   {
-    if (this == obj)
-      return true;
-    else if (obj == null)
-      return false;
-    else if (this.getClass() != obj.getClass())
-      return false;
+    return curr.hasNext();
+  }
 
-    List<T> other = (List<T>) obj;
+  @Override
+  public T next()
+  {
+    if (!hasNext())
+      return null;
 
-    if (this.head == other.head)
-      return true;
+    curr = curr.getNext();
 
-    return false;
+    return curr.getItem();
+  }
+
+  @Override
+  public void remove()
+  {
   }
 }
 
