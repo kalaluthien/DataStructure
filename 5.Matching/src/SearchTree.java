@@ -16,7 +16,7 @@ public class SearchTree
     if (isEmpty())
       root = new TreeNode(input);
 
-    root.insert(input, pos);
+    root = root.insert(input, pos);
   }
 
   public List<Position> search(String input)
@@ -33,8 +33,7 @@ public class SearchTree
       return;
 
     String output = root.toString().substring(1);
-    //System.out.println(output);
-    root.printTree("");
+    System.out.println(output);
   }
 
   public boolean isEmpty()
@@ -47,35 +46,42 @@ class TreeNode
 {
   final String subs;
   List<Position> l;
-  TreeNode left, right;
+
+  TreeNode leftChild, rightChild;
+  int leftHeight, rightHeight;
 
   public TreeNode(String subs)
   {
     this.subs = subs;
     l = new List<Position>();
-    left = right = null;
+    leftChild = rightChild = null;
+    leftHeight = rightHeight = 0;
   }
 
-  public void insert(String subs, Position pos)
+  public TreeNode insert(String subs, Position pos)
   {
     int comp = subs.compareTo(this.subs);
 
     if (comp < 0)
     {
-      if (left == null)
-        left = new TreeNode(subs);
+      if (leftChild == null)
+        leftChild = new TreeNode(subs);
 
-      left.insert(subs, pos);
+      leftChild = leftChild.insert(subs, pos);
+      leftHeight = leftChild.height();
     }
     else if (comp > 0)
     {
-      if (right == null)
-        right = new TreeNode(subs);
+      if (rightChild == null)
+        rightChild = new TreeNode(subs);
 
-      right.insert(subs, pos);
+      rightChild = rightChild.insert(subs, pos);
+      rightHeight = rightChild.height();
     }
     else
       l.insert(pos);
+
+    return balanceTree();
   }
 
   public List<Position> search(String subs)
@@ -84,20 +90,85 @@ class TreeNode
 
     if (comp < 0)
     {
-      if (left == null)
+      if (leftChild == null)
         return SearchTree.empty;
 
-      return left.search(subs);
+      return leftChild.search(subs);
     }
     else if (comp > 0)
     {
-      if (right == null)
+      if (rightChild == null)
         return SearchTree.empty;
 
-      return right.search(subs);
+      return rightChild.search(subs);
     }
 
     return l;
+  }
+
+  private TreeNode balanceTree()
+  {
+    TreeNode child;
+
+    if (diffHeight() < 2)
+      return this;
+
+    if (leftHeight < rightHeight)
+    {
+      child = rightChild;
+
+      if (child.leftHeight > child.rightHeight)
+        rightChild = child.rightRotate();
+
+      return leftRotate();
+    }
+    else
+    {
+      child = leftChild;
+
+      if (child.rightHeight > child.leftHeight)
+        leftChild = child.leftRotate();
+
+      return rightRotate();
+    }
+  }
+
+  private TreeNode leftRotate()
+  {
+    TreeNode root = rightChild;
+    rightChild = root.leftChild;
+    root.leftChild = this;
+
+    rightHeight = root.leftHeight;
+    root.leftHeight = height();
+
+    return root;
+  }
+
+  private TreeNode rightRotate()
+  {
+    TreeNode root = leftChild;
+    leftChild = root.rightChild;
+    root.rightChild = this;
+
+    leftHeight = root.rightHeight;
+    root.rightHeight = height();
+
+    return root;
+  }
+
+  private int diffHeight()
+  {
+    int diff = leftHeight - rightHeight;
+    return diff < 0 ? -diff : diff;
+  }
+
+  private int height()
+  {
+    if (leftHeight < rightHeight)
+      return rightHeight + 1;
+
+    return leftHeight + 1;
   }
 
   @Override
@@ -105,24 +176,12 @@ class TreeNode
   {
     StringBuilder result = new StringBuilder(" " + subs);
 
-    if (left != null)
-      result.append(left.toString());
+    if (leftChild != null)
+      result.append(leftChild.toString());
 
-    if (right != null)
-      result.append(right.toString());
+    if (rightChild != null)
+      result.append(rightChild.toString());
 
     return result.toString();
-  }
-
-  /* DEBUG */
-  public void printTree(String indent)
-  {
-    System.out.println(indent + '[' + subs + ']');
-
-    if (left != null)
-      left.printTree(indent + "L:  ");
-
-    if (right != null)
-      right.printTree(indent + "R:  ");
   }
 }
