@@ -9,7 +9,7 @@ public interface Command
 class InitCmd
   implements Command
 {
-  final String arg;
+  private final String arg;
 
   public InitCmd(String arg)
   {
@@ -26,20 +26,20 @@ class InitCmd
     db.initTable();
 
     String line = br.readLine();
-    while (line != null)
+    for (int i = 1; line != null; i++)
     {
-      addLine(db, line);
+      addLine(db, line, i);
       line = br.readLine();
     }
   }
 
-  private void addLine(Database db, String line)
+  private void addLine(Database db, String line, int lineNum)
     throws Exception
   {
     for (int i = 0; i <= line.length() - Matching.SAMPLING_LENGTH; i++)
     {
       String subs = line.substring(i, i + Matching.SAMPLING_LENGTH);
-      db.insert(subs);
+      db.insert(subs, new Position(lineNum, i + 1));
     }
   }
 }
@@ -47,7 +47,7 @@ class InitCmd
 class PrintCmd
   implements Command
 {
-  final int arg;
+  private final int arg;
 
   public PrintCmd(String arg)
   {
@@ -65,17 +65,55 @@ class PrintCmd
 class SearchCmd
   implements Command
 {
-  final String arg;
+  private String[] args;
 
   public SearchCmd(String arg)
   {
-    this.arg = arg;
+    int length = arg.length() / Matching.SAMPLING_LENGTH;
+    int offset = arg.length() % Matching.SAMPLING_LENGTH;
+
+    args = new String[length + (offset > 0 ? 1 : 0)];
+    splitArg(arg, length, offset);
+  }
+
+  private void splitArg(String arg, int length, int offset)
+  {
+    int sl = Matching.SAMPLING_LENGTH;
+
+    for (int i = 0; i < length; i++)
+    {
+      String subs = arg.substring(i * sl, i * sl + sl);
+      args[i] = subs;
+    }
+    if (offset > 0)
+    {
+      int start = length * sl - sl + offset;
+      args[length] = arg.substring(start, start + sl);
+    }
   }
 
   @Override
   public void apply(Database db)
     throws Exception
   {
-    /* TODO */
+    List<List<Position>> l = new List<List<Position>>();
+
+    for (int i = 0; i < args.length; i++)
+      l.insert(db.search(args[0]));
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

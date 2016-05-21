@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class List<T extends Comparable<T>>
+  implements Comparable<List<T>>
 {
   Node<T> head;
   int numItems;
@@ -40,6 +41,20 @@ public class List<T extends Comparable<T>>
     numItems++;
   }
 
+  public Object[] toArray()
+  {
+    Object[] array = new Object[numItems];
+
+    Node<T> curr = head;
+    for (int i = 0; curr.hasNext(); i++)
+    {
+      curr = curr.getNext();
+      array[i] = curr.getItem();
+    }
+
+    return array;
+  }
+
   public void print()
   {
     Node<T> curr = head;
@@ -52,6 +67,30 @@ public class List<T extends Comparable<T>>
     }
 
     System.out.println(sb.toString().substring(1));
+  }
+
+  @Override
+  public int compareTo(List<T> other)
+  {
+    return 0;
+  }
+
+  @Override
+  public boolean equals(Object obj)
+  {
+    if (this == obj)
+      return true;
+    else if (obj == null)
+      return false;
+    else if (this.getClass() != obj.getClass())
+      return false;
+
+    List<T> other = (List<T>) obj;
+
+    if (this.head == other.head)
+      return true;
+
+    return false;
   }
 }
 

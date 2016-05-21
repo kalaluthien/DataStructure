@@ -2,21 +2,42 @@ import java.util.*;
 
 public class SearchTree
 {
-  Tree root;
+  TreeNode root;
 
   public SearchTree()
   {
     root = null;
   }
 
-  public void insert(String input)
+  public void insert(String input, Position pos)
   {
-    System.out.println('[' + input + "] inserted.");
+    if (isEmpty())
+      root = new TreeNode(input);
+
+    root.insert(input, pos);
+  }
+
+  public List<Position> search(String input)
+  {
+    if (isEmpty())
+    {
+      List<Position> empty = new List<Position>();
+      empty.insert(new Position(0, 0));
+
+      return empty;
+    }
+
+    return root.search(input);
   }
 
   public void print()
   {
-    System.out.println("EMPTY");
+    if (isEmpty())
+      return;
+
+    String output = root.toString().substring(1);
+    //System.out.println(output);
+    root.printTree("  ");
   }
 
   public boolean isEmpty()
@@ -25,7 +46,135 @@ public class SearchTree
   }
 }
 
-class Tree
+class TreeNode
 {
-  String item;
+  final String subs;
+  List<Position> l;
+  TreeNode left, right;
+
+  public TreeNode(String subs)
+  {
+    this.subs = subs;
+    l = new List<Position>();
+    left = right = null;
+  }
+
+  public void insert(String subs, Position pos)
+  {
+    int comp = subs.compareTo(this.subs);
+
+    if (comp < 0)
+    {
+      if (left == null)
+        left = new TreeNode(subs);
+
+      left.insert(subs, pos);
+    }
+    else if (comp > 0)
+    {
+      if (right == null)
+        right = new TreeNode(subs);
+
+      right.insert(subs, pos);
+    }
+    else
+      l.insert(pos);
+  }
+
+  public List<Position> search(String subs)
+  {
+    int comp = subs.compareTo(this.subs);
+
+    if (comp < 0)
+    {
+      if (left == null)
+        return null;
+
+      return left.search(subs);
+    }
+    else if (comp > 0)
+    {
+      if (right == null)
+        return null;
+
+      return right.search(subs);
+    }
+
+    return l;
+  }
+
+  @Override
+  public String toString()
+  {
+    StringBuilder result = new StringBuilder(" " + subs);
+
+    if (left != null)
+      result.append(left.toString());
+
+    if (right != null)
+      result.append(right.toString());
+
+    return result.toString();
+  }
+
+  /* DEBUG */
+  public void printTree(String indent)
+  {
+    System.out.println(indent + '[' + subs + ']');
+
+    if (left != null)
+      left.printTree(' ' + indent + "L:  ");
+
+    if (right != null)
+      right.printTree(' ' + indent + "R:  ");
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

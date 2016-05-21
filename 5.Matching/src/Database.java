@@ -17,13 +17,13 @@ public class Database
       table[i] = new SearchTree();
   }
 
-  public void insert(String input)
+  public void insert(String input, Position pos)
     throws Exception
   {
     if (input.length() != Matching.SAMPLING_LENGTH)
       throw new Exception(input + ": sampling length mismatch.");
 
-    table[hash(input)].insert(input);
+    table[hash(input)].insert(input, pos);
   }
 
   public void print(int index)
@@ -34,13 +34,13 @@ public class Database
     table[index].print();
   }
 
-  public void search(String pattern)
+  public List<Position> search(String input)
     throws Exception
   {
-    if (pattern.length() < Matching.SAMPLING_LENGTH)
-      throw new Exception(pattern + ": too short search pattern.");
+    if (input.length() != Matching.SAMPLING_LENGTH)
+      throw new Exception(input + ": sampling length mismatch.");
 
-    /* TODO */
+    return table[hash(input)].search(input);
   }
 
   private static int hash(String input)

@@ -4,18 +4,26 @@ public class Position
   implements Comparable<Position>
 {
   private final int line;
-  private final int pos;
+  private final int cpos;
 
-  public Position(int line, int pos)
+  public Position(int line, int cpos)
   {
     this.line = line;
-    this.pos = pos;
+    this.cpos = cpos;
+  }
+
+  public boolean neighbor(Position other, int offset)
+  {
+    boolean lineCond = this.line == other.line;
+    boolean cposCond = this.cpos + offset == other.cpos;
+
+    return lineCond && cposCond;
   }
 
   @Override
   public String toString()
   {
-    return '(' + line + ", " + pos + ')';
+    return '(' + line + ", " + cpos + ')';
   }
 
   @Override
@@ -25,12 +33,12 @@ public class Position
       return -1;
     else if (this.line > other.line)
       return 1;
-    else if (this.pos < other.pos)
+    else if (this.cpos < other.cpos)
       return -1;
-    else if (this.pos > other.pos)
+    else if (this.cpos > other.cpos)
       return 1;
-    else
-      return 0;
+
+    return 0;
   }
 
   @Override
@@ -45,21 +53,9 @@ public class Position
 
     Position other = (Position) obj;
 
-    if (this.line == other.line && this.pos == other.pos)
+    if (this.line == other.line && this.cpos == other.cpos)
       return true;
 
     return false;
-  }
-
-  @Override
-  public int hashCode()
-  {
-    final int prime = 31;
-    int result = 1;
-
-    result = prime * result + line;
-    result = prime * result + pos;
-
-    return result;
   }
 }
