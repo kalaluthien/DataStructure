@@ -29,11 +29,11 @@ DataStructure
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/4.Sorting/src)
    * [test cpp code](https://github.com/kalaluthien/DataStructure/tree/master/4.Sorting/test) thanks to 김희훈
 5. **Matching**
-   * ~~example code~~
+   * [example code](https://github.com/kalaluthien/DataStructure/tree/Matching)
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/5.Matching/src)
    * [testcases](https://github.com/kalaluthien/DataStructure/tree/master/5.Matching/test)
 6. **Subway**
-   * ~~example code~~
+   * [example code](https://github.com/kalaluthien/DataStructure/tree/Subway)
    * [tesetcases](https://github.com/kalaluthien/DataStructure/tree/master/6.Subway)
 
 # DO NOT COPY EXAMPLE CODE
