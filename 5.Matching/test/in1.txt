@@ -1,0 +1,1780 @@
+< test/data.txt
+@ 0
+@ 1
+@ 2
+@ 3
+@ 4
+@ 5
+@ 6
+@ 7
+@ 8
+@ 9
+@ 10
+@ 11
+@ 12
+@ 13
+@ 14
+@ 15
+@ 16
+@ 17
+@ 18
+@ 19
+@ 20
+@ 21
+@ 22
+@ 23
+@ 24
+@ 25
+@ 26
+@ 27
+@ 28
+@ 29
+@ 30
+@ 31
+@ 32
+@ 33
+@ 34
+@ 35
+@ 36
+@ 37
+@ 38
+@ 39
+@ 40
+@ 41
+@ 42
+@ 43
+@ 44
+@ 45
+@ 46
+@ 47
+@ 48
+@ 49
+@ 50
+@ 51
+@ 52
+@ 53
+@ 54
+@ 55
+@ 56
+@ 57
+@ 58
+@ 59
+@ 60
+@ 61
+@ 62
+@ 63
+@ 64
+@ 65
+@ 66
+@ 67
+@ 68
+@ 69
+@ 70
+@ 71
+@ 72
+@ 73
+@ 74
+@ 75
+@ 76
+@ 77
+@ 78
+@ 79
+@ 80
+@ 81
+@ 82
+@ 83
+@ 84
+@ 85
+@ 86
+@ 87
+@ 88
+@ 89
+@ 90
+@ 91
+@ 92
+@ 93
+@ 94
+@ 95
+@ 96
+@ 97
+@ 98
+@ 99
+? this i
+? his is
+? is is 
+? s is a
+?  is a 
+? is a b
+? s a bo
+?  a boy
+? a boy.
+?  boy. 
+? boy. h
+? oy. he
+? y. hel
+? . hell
+?  hello
+? hello,
+? ello, 
+? llo, b
+? lo, bo
+? o, boy
+? , boy.
+? this is
+? his is 
+? is is a
+? s is a 
+?  is a b
+? is a bo
+? s a boy
+?  a boy.
+? a boy. 
+?  boy. h
+? boy. he
+? oy. hel
+? y. hell
+? . hello
+?  hello,
+? hello, 
+? ello, b
+? llo, bo
+? lo, boy
+? o, boy.
+? this is 
+? his is a
+? is is a 
+? s is a b
+?  is a bo
+? is a boy
+? s a boy.
+?  a boy. 
+? a boy. h
+?  boy. he
+? boy. hel
+? oy. hell
+? y. hello
+? . hello,
+?  hello, 
+? hello, b
+? ello, bo
+? llo, boy
+? lo, boy.
+? this is a
+? his is a 
+? is is a b
+? s is a bo
+?  is a boy
+? is a boy.
+? s a boy. 
+?  a boy. h
+? a boy. he
+?  boy. hel
+? boy. hell
+? oy. hello
+? y. hello,
+? . hello, 
+?  hello, b
+? hello, bo
+? ello, boy
+? llo, boy.
+? this is a 
+? his is a b
+? is is a bo
+? s is a boy
+?  is a boy.
+? is a boy. 
+? s a boy. h
+?  a boy. he
+? a boy. hel
+?  boy. hell
+? boy. hello
+? oy. hello,
+? y. hello, 
+? . hello, b
+?  hello, bo
+? hello, boy
+? ello, boy.
+? this is a b
+? his is a bo
+? is is a boy
+? s is a boy.
+?  is a boy. 
+? is a boy. h
+? s a boy. he
+?  a boy. hel
+? a boy. hell
+?  boy. hello
+? boy. hello,
+? oy. hello, 
+? y. hello, b
+? . hello, bo
+?  hello, boy
+? hello, boy.
+? this is a bo
+? his is a boy
+? is is a boy.
+? s is a boy. 
+?  is a boy. h
+? is a boy. he
+? s a boy. hel
+?  a boy. hell
+? a boy. hello
+?  boy. hello,
+? boy. hello, 
+? oy. hello, b
+? y. hello, bo
+? . hello, boy
+?  hello, boy.
+? this is a boy
+? his is a boy.
+? is is a boy. 
+? s is a boy. h
+?  is a boy. he
+? is a boy. hel
+? s a boy. hell
+?  a boy. hello
+? a boy. hello,
+?  boy. hello, 
+? boy. hello, b
+? oy. hello, bo
+? y. hello, boy
+? . hello, boy.
+? this is a boy.
+? his is a boy. 
+? is is a boy. h
+? s is a boy. he
+?  is a boy. hel
+? is a boy. hell
+? s a boy. hello
+?  a boy. hello,
+? a boy. hello, 
+?  boy. hello, b
+? boy. hello, bo
+? oy. hello, boy
+? y. hello, boy.
+? this is a boy. 
+? his is a boy. h
+? is is a boy. he
+? s is a boy. hel
+?  is a boy. hell
+? is a boy. hello
+? s a boy. hello,
+?  a boy. hello, 
+? a boy. hello, b
+?  boy. hello, bo
+? boy. hello, boy
+? oy. hello, boy.
+? this is a boy. h
+? his is a boy. he
+? is is a boy. hel
+? s is a boy. hell
+?  is a boy. hello
+? is a boy. hello,
+? s a boy. hello, 
+?  a boy. hello, b
+? a boy. hello, bo
+?  boy. hello, boy
+? boy. hello, boy.
+? this is a boy. he
+? his is a boy. hel
+? is is a boy. hell
+? s is a boy. hello
+?  is a boy. hello,
+? is a boy. hello, 
+? s a boy. hello, b
+?  a boy. hello, bo
+? a boy. hello, boy
+?  boy. hello, boy.
+? this is a boy. hel
+? his is a boy. hell
+? is is a boy. hello
+? s is a boy. hello,
+?  is a boy. hello, 
+? is a boy. hello, b
+? s a boy. hello, bo
+?  a boy. hello, boy
+? a boy. hello, boy.
+? it is 
+? t is m
+?  is mo
+? is mor
+? s more
+?  more 
+? more i
+? ore im
+? re imp
+? e impo
+?  impor
+? import
+? mporta
+? portan
+? ortant
+? rtant 
+? tant t
+? ant to
+? nt to 
+? t to a
+?  to av
+? to avo
+? o avoi
+?  avoid
+? avoid 
+? void u
+? oid us
+? id usi
+? d usin
+?  using
+? using 
+? sing a
+? ing a 
+? ng a b
+? g a ba
+?  a bad
+? a bad 
+?  bad d
+? bad da
+? ad dat
+? d data
+?  data 
+? data s
+? ata st
+? ta str
+? a stru
+?  struc
+? struct
+? tructu
+? ructur
+? ucture
+? cture.
+? it is m
+? t is mo
+?  is mor
+? is more
+? s more 
+?  more i
+? more im
+? ore imp
+? re impo
+? e impor
+?  import
+? importa
+? mportan
+? portant
+? ortant 
+? rtant t
+? tant to
+? ant to 
+? nt to a
+? t to av
+?  to avo
+? to avoi
+? o avoid
+?  avoid 
+? avoid u
+? void us
+? oid usi
+? id usin
+? d using
+?  using 
+? using a
+? sing a 
+? ing a b
+? ng a ba
+? g a bad
+?  a bad 
+? a bad d
+?  bad da
+? bad dat
+? ad data
+? d data 
+?  data s
+? data st
+? ata str
+? ta stru
+? a struc
+?  struct
+? structu
+? tructur
+? ructure
+? ucture.
+? it is mo
+? t is mor
+?  is more
+? is more 
+? s more i
+?  more im
+? more imp
+? ore impo
+? re impor
+? e import
+?  importa
+? importan
+? mportant
+? portant 
+? ortant t
+? rtant to
+? tant to 
+? ant to a
+? nt to av
+? t to avo
+?  to avoi
+? to avoid
+? o avoid 
+?  avoid u
+? avoid us
+? void usi
+? oid usin
+? id using
+? d using 
+?  using a
+? using a 
+? sing a b
+? ing a ba
+? ng a bad
+? g a bad 
+?  a bad d
+? a bad da
+?  bad dat
+? bad data
+? ad data 
+? d data s
+?  data st
+? data str
+? ata stru
+? ta struc
+? a struct
+?  structu
+? structur
+? tructure
+? ructure.
+? it is mor
+? t is more
+?  is more 
+? is more i
+? s more im
+?  more imp
+? more impo
+? ore impor
+? re import
+? e importa
+?  importan
+? important
+? mportant 
+? portant t
+? ortant to
+? rtant to 
+? tant to a
+? ant to av
+? nt to avo
+? t to avoi
+?  to avoid
+? to avoid 
+? o avoid u
+?  avoid us
+? avoid usi
+? void usin
+? oid using
+? id using 
+? d using a
+?  using a 
+? using a b
+? sing a ba
+? ing a bad
+? ng a bad 
+? g a bad d
+?  a bad da
+? a bad dat
+?  bad data
+? bad data 
+? ad data s
+? d data st
+?  data str
+? data stru
+? ata struc
+? ta struct
+? a structu
+?  structur
+? structure
+? tructure.
+? it is more
+? t is more 
+?  is more i
+? is more im
+? s more imp
+?  more impo
+? more impor
+? ore import
+? re importa
+? e importan
+?  important
+? important 
+? mportant t
+? portant to
+? ortant to 
+? rtant to a
+? tant to av
+? ant to avo
+? nt to avoi
+? t to avoid
+?  to avoid 
+? to avoid u
+? o avoid us
+?  avoid usi
+? avoid usin
+? void using
+? oid using 
+? id using a
+? d using a 
+?  using a b
+? using a ba
+? sing a bad
+? ing a bad 
+? ng a bad d
+? g a bad da
+?  a bad dat
+? a bad data
+?  bad data 
+? bad data s
+? ad data st
+? d data str
+?  data stru
+? data struc
+? ata struct
+? ta structu
+? a structur
+?  structure
+? structure.
+? it is more 
+? t is more i
+?  is more im
+? is more imp
+? s more impo
+?  more impor
+? more import
+? ore importa
+? re importan
+? e important
+?  important 
+? important t
+? mportant to
+? portant to 
+? ortant to a
+? rtant to av
+? tant to avo
+? ant to avoi
+? nt to avoid
+? t to avoid 
+?  to avoid u
+? to avoid us
+? o avoid usi
+?  avoid usin
+? avoid using
+? void using 
+? oid using a
+? id using a 
+? d using a b
+?  using a ba
+? using a bad
+? sing a bad 
+? ing a bad d
+? ng a bad da
+? g a bad dat
+?  a bad data
+? a bad data 
+?  bad data s
+? bad data st
+? ad data str
+? d data stru
+?  data struc
+? data struct
+? ata structu
+? ta structur
+? a structure
+?  structure.
+? it is more i
+? t is more im
+?  is more imp
+? is more impo
+? s more impor
+?  more import
+? more importa
+? ore importan
+? re important
+? e important 
+?  important t
+? important to
+? mportant to 
+? portant to a
+? ortant to av
+? rtant to avo
+? tant to avoi
+? ant to avoid
+? nt to avoid 
+? t to avoid u
+?  to avoid us
+? to avoid usi
+? o avoid usin
+?  avoid using
+? avoid using 
+? void using a
+? oid using a 
+? id using a b
+? d using a ba
+?  using a bad
+? using a bad 
+? sing a bad d
+? ing a bad da
+? ng a bad dat
+? g a bad data
+?  a bad data 
+? a bad data s
+?  bad data st
+? bad data str
+? ad data stru
+? d data struc
+?  data struct
+? data structu
+? ata structur
+? ta structure
+? a structure.
+? it is more im
+? t is more imp
+?  is more impo
+? is more impor
+? s more import
+?  more importa
+? more importan
+? ore important
+? re important 
+? e important t
+?  important to
+? important to 
+? mportant to a
+? portant to av
+? ortant to avo
+? rtant to avoi
+? tant to avoid
+? ant to avoid 
+? nt to avoid u
+? t to avoid us
+?  to avoid usi
+? to avoid usin
+? o avoid using
+?  avoid using 
+? avoid using a
+? void using a 
+? oid using a b
+? id using a ba
+? d using a bad
+?  using a bad 
+? using a bad d
+? sing a bad da
+? ing a bad dat
+? ng a bad data
+? g a bad data 
+?  a bad data s
+? a bad data st
+?  bad data str
+? bad data stru
+? ad data struc
+? d data struct
+?  data structu
+? data structur
+? ata structure
+? ta structure.
+? it is more imp
+? t is more impo
+?  is more impor
+? is more import
+? s more importa
+?  more importan
+? more important
+? ore important 
+? re important t
+? e important to
+?  important to 
+? important to a
+? mportant to av
+? portant to avo
+? ortant to avoi
+? rtant to avoid
+? tant to avoid 
+? ant to avoid u
+? nt to avoid us
+? t to avoid usi
+?  to avoid usin
+? to avoid using
+? o avoid using 
+?  avoid using a
+? avoid using a 
+? void using a b
+? oid using a ba
+? id using a bad
+? d using a bad 
+?  using a bad d
+? using a bad da
+? sing a bad dat
+? ing a bad data
+? ng a bad data 
+? g a bad data s
+?  a bad data st
+? a bad data str
+?  bad data stru
+? bad data struc
+? ad data struct
+? d data structu
+?  data structur
+? data structure
+? ata structure.
+? it is more impo
+? t is more impor
+?  is more import
+? is more importa
+? s more importan
+?  more important
+? more important 
+? ore important t
+? re important to
+? e important to 
+?  important to a
+? important to av
+? mportant to avo
+? portant to avoi
+? ortant to avoid
+? rtant to avoid 
+? tant to avoid u
+? ant to avoid us
+? nt to avoid usi
+? t to avoid usin
+?  to avoid using
+? to avoid using 
+? o avoid using a
+?  avoid using a 
+? avoid using a b
+? void using a ba
+? oid using a bad
+? id using a bad 
+? d using a bad d
+?  using a bad da
+? using a bad dat
+? sing a bad data
+? ing a bad data 
+? ng a bad data s
+? g a bad data st
+?  a bad data str
+? a bad data stru
+?  bad data struc
+? bad data struct
+? ad data structu
+? d data structur
+?  data structure
+? data structure.
+? it is more impor
+? t is more import
+?  is more importa
+? is more importan
+? s more important
+?  more important 
+? more important t
+? ore important to
+? re important to 
+? e important to a
+?  important to av
+? important to avo
+? mportant to avoi
+? portant to avoid
+? ortant to avoid 
+? rtant to avoid u
+? tant to avoid us
+? ant to avoid usi
+? nt to avoid usin
+? t to avoid using
+?  to avoid using 
+? to avoid using a
+? o avoid using a 
+?  avoid using a b
+? avoid using a ba
+? void using a bad
+? oid using a bad 
+? id using a bad d
+? d using a bad da
+?  using a bad dat
+? using a bad data
+? sing a bad data 
+? ing a bad data s
+? ng a bad data st
+? g a bad data str
+?  a bad data stru
+? a bad data struc
+?  bad data struct
+? bad data structu
+? ad data structur
+? d data structure
+?  data structure.
+? it is more import
+? t is more importa
+?  is more importan
+? is more important
+? s more important 
+?  more important t
+? more important to
+? ore important to 
+? re important to a
+? e important to av
+?  important to avo
+? important to avoi
+? mportant to avoid
+? portant to avoid 
+? ortant to avoid u
+? rtant to avoid us
+? tant to avoid usi
+? ant to avoid usin
+? nt to avoid using
+? t to avoid using 
+?  to avoid using a
+? to avoid using a 
+? o avoid using a b
+?  avoid using a ba
+? avoid using a bad
+? void using a bad 
+? oid using a bad d
+? id using a bad da
+? d using a bad dat
+?  using a bad data
+? using a bad data 
+? sing a bad data s
+? ing a bad data st
+? ng a bad data str
+? g a bad data stru
+?  a bad data struc
+? a bad data struct
+?  bad data structu
+? bad data structur
+? ad data structure
+? d data structure.
+? it is more importa
+? t is more importan
+?  is more important
+? is more important 
+? s more important t
+?  more important to
+? more important to 
+? ore important to a
+? re important to av
+? e important to avo
+?  important to avoi
+? important to avoid
+? mportant to avoid 
+? portant to avoid u
+? ortant to avoid us
+? rtant to avoid usi
+? tant to avoid usin
+? ant to avoid using
+? nt to avoid using 
+? t to avoid using a
+?  to avoid using a 
+? to avoid using a b
+? o avoid using a ba
+?  avoid using a bad
+? avoid using a bad 
+? void using a bad d
+? oid using a bad da
+? id using a bad dat
+? d using a bad data
+?  using a bad data 
+? using a bad data s
+? sing a bad data st
+? ing a bad data str
+? ng a bad data stru
+? g a bad data struc
+?  a bad data struct
+? a bad data structu
+?  bad data structur
+? bad data structure
+? ad data structure.
+? i am a
+?  am a 
+? am a b
+? m a bo
+?  a boy
+? a boyb
+?  boybo
+? boyboy
+? oyboy.
+? yboy. 
+? boy. b
+? oy. bo
+? y. boy
+? . boys
+?  boys 
+? boys b
+? oys be
+? ys be 
+? s be a
+?  be am
+? be amb
+? e ambi
+?  ambit
+? ambiti
+? mbitio
+? bitiou
+? itious
+? tious!
+? i am a 
+?  am a b
+? am a bo
+? m a boy
+?  a boyb
+? a boybo
+?  boyboy
+? boyboy.
+? oyboy. 
+? yboy. b
+? boy. bo
+? oy. boy
+? y. boys
+? . boys 
+?  boys b
+? boys be
+? oys be 
+? ys be a
+? s be am
+?  be amb
+? be ambi
+? e ambit
+?  ambiti
+? ambitio
+? mbitiou
+? bitious
+? itious!
+? i am a b
+?  am a bo
+? am a boy
+? m a boyb
+?  a boybo
+? a boyboy
+?  boyboy.
+? boyboy. 
+? oyboy. b
+? yboy. bo
+? boy. boy
+? oy. boys
+? y. boys 
+? . boys b
+?  boys be
+? boys be 
+? oys be a
+? ys be am
+? s be amb
+?  be ambi
+? be ambit
+? e ambiti
+?  ambitio
+? ambitiou
+? mbitious
+? bitious!
+? i am a bo
+?  am a boy
+? am a boyb
+? m a boybo
+?  a boyboy
+? a boyboy.
+?  boyboy. 
+? boyboy. b
+? oyboy. bo
+? yboy. boy
+? boy. boys
+? oy. boys 
+? y. boys b
+? . boys be
+?  boys be 
+? boys be a
+? oys be am
+? ys be amb
+? s be ambi
+?  be ambit
+? be ambiti
+? e ambitio
+?  ambitiou
+? ambitious
+? mbitious!
+? i am a boy
+?  am a boyb
+? am a boybo
+? m a boyboy
+?  a boyboy.
+? a boyboy. 
+?  boyboy. b
+? boyboy. bo
+? oyboy. boy
+? yboy. boys
+? boy. boys 
+? oy. boys b
+? y. boys be
+? . boys be 
+?  boys be a
+? boys be am
+? oys be amb
+? ys be ambi
+? s be ambit
+?  be ambiti
+? be ambitio
+? e ambitiou
+?  ambitious
+? ambitious!
+? i am a boyb
+?  am a boybo
+? am a boyboy
+? m a boyboy.
+?  a boyboy. 
+? a boyboy. b
+?  boyboy. bo
+? boyboy. boy
+? oyboy. boys
+? yboy. boys 
+? boy. boys b
+? oy. boys be
+? y. boys be 
+? . boys be a
+?  boys be am
+? boys be amb
+? oys be ambi
+? ys be ambit
+? s be ambiti
+?  be ambitio
+? be ambitiou
+? e ambitious
+?  ambitious!
+? i am a boybo
+?  am a boyboy
+? am a boyboy.
+? m a boyboy. 
+?  a boyboy. b
+? a boyboy. bo
+?  boyboy. boy
+? boyboy. boys
+? oyboy. boys 
+? yboy. boys b
+? boy. boys be
+? oy. boys be 
+? y. boys be a
+? . boys be am
+?  boys be amb
+? boys be ambi
+? oys be ambit
+? ys be ambiti
+? s be ambitio
+?  be ambitiou
+? be ambitious
+? e ambitious!
+? i am a boyboy
+?  am a boyboy.
+? am a boyboy. 
+? m a boyboy. b
+?  a boyboy. bo
+? a boyboy. boy
+?  boyboy. boys
+? boyboy. boys 
+? oyboy. boys b
+? yboy. boys be
+? boy. boys be 
+? oy. boys be a
+? y. boys be am
+? . boys be amb
+?  boys be ambi
+? boys be ambit
+? oys be ambiti
+? ys be ambitio
+? s be ambitiou
+?  be ambitious
+? be ambitious!
+? i am a boyboy.
+?  am a boyboy. 
+? am a boyboy. b
+? m a boyboy. bo
+?  a boyboy. boy
+? a boyboy. boys
+?  boyboy. boys 
+? boyboy. boys b
+? oyboy. boys be
+? yboy. boys be 
+? boy. boys be a
+? oy. boys be am
+? y. boys be amb
+? . boys be ambi
+?  boys be ambit
+? boys be ambiti
+? oys be ambitio
+? ys be ambitiou
+? s be ambitious
+?  be ambitious!
+? i am a boyboy. 
+?  am a boyboy. b
+? am a boyboy. bo
+? m a boyboy. boy
+?  a boyboy. boys
+? a boyboy. boys 
+?  boyboy. boys b
+? boyboy. boys be
+? oyboy. boys be 
+? yboy. boys be a
+? boy. boys be am
+? oy. boys be amb
+? y. boys be ambi
+? . boys be ambit
+?  boys be ambiti
+? boys be ambitio
+? oys be ambitiou
+? ys be ambitious
+? s be ambitious!
+? i am a boyboy. b
+?  am a boyboy. bo
+? am a boyboy. boy
+? m a boyboy. boys
+?  a boyboy. boys 
+? a boyboy. boys b
+?  boyboy. boys be
+? boyboy. boys be 
+? oyboy. boys be a
+? yboy. boys be am
+? boy. boys be amb
+? oy. boys be ambi
+? y. boys be ambit
+? . boys be ambiti
+?  boys be ambitio
+? boys be ambitiou
+? oys be ambitious
+? ys be ambitious!
+? i am a boyboy. bo
+?  am a boyboy. boy
+? am a boyboy. boys
+? m a boyboy. boys 
+?  a boyboy. boys b
+? a boyboy. boys be
+?  boyboy. boys be 
+? boyboy. boys be a
+? oyboy. boys be am
+? yboy. boys be amb
+? boy. boys be ambi
+? oy. boys be ambit
+? y. boys be ambiti
+? . boys be ambitio
+?  boys be ambitiou
+? boys be ambitious
+? oys be ambitious!
+? i am a boyboy. boy
+?  am a boyboy. boys
+? am a boyboy. boys 
+? m a boyboy. boys b
+?  a boyboy. boys be
+? a boyboy. boys be 
+?  boyboy. boys be a
+? boyboy. boys be am
+? oyboy. boys be amb
+? yboy. boys be ambi
+? boy. boys be ambit
+? oy. boys be ambiti
+? y. boys be ambitio
+? . boys be ambitiou
+?  boys be ambitious
+? boys be ambitious!
+? boyboy
+? oyboyo
+? yboyob
+? boyobo
+? oyoboy
+? yoboyb
+? oboybo
+? boyboy
+? oyboyb
+? yboybo
+? boyboy
+? boyboyo
+? oyboyob
+? yboyobo
+? boyoboy
+? oyoboyb
+? yoboybo
+? oboyboy
+? boyboyb
+? oyboybo
+? yboyboy
+? boyboyob
+? oyboyobo
+? yboyoboy
+? boyoboyb
+? oyoboybo
+? yoboyboy
+? oboyboyb
+? boyboybo
+? oyboyboy
+? boyboyobo
+? oyboyoboy
+? yboyoboyb
+? boyoboybo
+? oyoboyboy
+? yoboyboyb
+? oboyboybo
+? boyboyboy
+? boyboyoboy
+? oyboyoboyb
+? yboyoboybo
+? boyoboyboy
+? oyoboyboyb
+? yoboyboybo
+? oboyboyboy
+? boyboyoboyb
+? oyboyoboybo
+? yboyoboyboy
+? boyoboyboyb
+? oyoboyboybo
+? yoboyboyboy
+? boyboyoboybo
+? oyboyoboyboy
+? yboyoboyboyb
+? boyoboyboybo
+? oyoboyboyboy
+? boyboyoboyboy
+? oyboyoboyboyb
+? yboyoboyboybo
+? boyoboyboyboy
+? boyboyoboyboyb
+? oyboyoboyboybo
+? yboyoboyboyboy
+? boyboyoboyboybo
+? oyboyoboyboyboy
+? boyboyoboyboyboy
+? more i
+? ore im
+? re imp
+? e impo
+?  impor
+? import
+? mporta
+? portan
+? ortant
+? rtant 
+? tant t
+? ant to
+? nt to 
+? t to a
+?  to av
+? to avo
+? o avoi
+?  avoid
+? avoid 
+? void i
+? oid it
+? id it 
+? d it i
+?  it is
+? it is 
+? t is m
+?  is mo
+? is mor
+? s more
+?  more 
+? more i
+? ore im
+? re imp
+? e impo
+?  impor
+? import
+? mporta
+? portan
+? ortant
+? rtant 
+? tant t
+? ant to
+? nt to 
+? t to d
+?  to da
+? to dat
+? o data
+? more im
+? ore imp
+? re impo
+? e impor
+?  import
+? importa
+? mportan
+? portant
+? ortant 
+? rtant t
+? tant to
+? ant to 
+? nt to a
+? t to av
+?  to avo
+? to avoi
+? o avoid
+?  avoid 
+? avoid i
+? void it
+? oid it 
+? id it i
+? d it is
+?  it is 
+? it is m
+? t is mo
+?  is mor
+? is more
+? s more 
+?  more i
+? more im
+? ore imp
+? re impo
+? e impor
+?  import
+? importa
+? mportan
+? portant
+? ortant 
+? rtant t
+? tant to
+? ant to 
+? nt to d
+? t to da
+?  to dat
+? to data
+? more imp
+? ore impo
+? re impor
+? e import
+?  importa
+? importan
+? mportant
+? portant 
+? ortant t
+? rtant to
+? tant to 
+? ant to a
+? nt to av
+? t to avo
+?  to avoi
+? to avoid
+? o avoid 
+?  avoid i
+? avoid it
+? void it 
+? oid it i
+? id it is
+? d it is 
+?  it is m
+? it is mo
+? t is mor
+?  is more
+? is more 
+? s more i
+?  more im
+? more imp
+? ore impo
+? re impor
+? e import
+?  importa
+? importan
+? mportant
+? portant 
+? ortant t
+? rtant to
+? tant to 
+? ant to d
+? nt to da
+? t to dat
+?  to data
+? more impo
+? ore impor
+? re import
+? e importa
+?  importan
+? important
+? mportant 
+? portant t
+? ortant to
+? rtant to 
+? tant to a
+? ant to av
+? nt to avo
+? t to avoi
+?  to avoid
+? to avoid 
+? o avoid i
+?  avoid it
+? avoid it 
+? void it i
+? oid it is
+? id it is 
+? d it is m
+?  it is mo
+? it is mor
+? t is more
+?  is more 
+? is more i
+? s more im
+?  more imp
+? more impo
+? ore impor
+? re import
+? e importa
+?  importan
+? important
+? mportant 
+? portant t
+? ortant to
+? rtant to 
+? tant to d
+? ant to da
+? nt to dat
+? t to data
+? more impor
+? ore import
+? re importa
+? e importan
+?  important
+? important 
+? mportant t
+? portant to
+? ortant to 
+? rtant to a
+? tant to av
+? ant to avo
+? nt to avoi
+? t to avoid
+?  to avoid 
+? to avoid i
+? o avoid it
+?  avoid it 
+? avoid it i
+? void it is
+? oid it is 
+? id it is m
+? d it is mo
+?  it is mor
+? it is more
+? t is more 
+?  is more i
+? is more im
+? s more imp
+?  more impo
+? more impor
+? ore import
+? re importa
+? e importan
+?  important
+? important 
+? mportant t
+? portant to
+? ortant to 
+? rtant to d
+? tant to da
+? ant to dat
+? nt to data
+? more import
+? ore importa
+? re importan
+? e important
+?  important 
+? important t
+? mportant to
+? portant to 
+? ortant to a
+? rtant to av
+? tant to avo
+? ant to avoi
+? nt to avoid
+? t to avoid 
+?  to avoid i
+? to avoid it
+? o avoid it 
+?  avoid it i
+? avoid it is
+? void it is 
+? oid it is m
+? id it is mo
+? d it is mor
+?  it is more
+? it is more 
+? t is more i
+?  is more im
+? is more imp
+? s more impo
+?  more impor
+? more import
+? ore importa
+? re importan
+? e important
+?  important 
+? important t
+? mportant to
+? portant to 
+? ortant to d
+? rtant to da
+? tant to dat
+? ant to data
+? more importa
+? ore importan
+? re important
+? e important 
+?  important t
+? important to
+? mportant to 
+? portant to a
+? ortant to av
+? rtant to avo
+? tant to avoi
+? ant to avoid
+? nt to avoid 
+? t to avoid i
+?  to avoid it
+? to avoid it 
+? o avoid it i
+?  avoid it is
+? avoid it is 
+? void it is m
+? oid it is mo
+? id it is mor
+? d it is more
+?  it is more 
+? it is more i
+? t is more im
+?  is more imp
+? is more impo
+? s more impor
+?  more import
+? more importa
+? ore importan
+? re important
+? e important 
+?  important t
+? important to
+? mportant to 
+? portant to d
+? ortant to da
+? rtant to dat
+? tant to data
+? more importan
+? ore important
+? re important 
+? e important t
+?  important to
+? important to 
+? mportant to a
+? portant to av
+? ortant to avo
+? rtant to avoi
+? tant to avoid
+? ant to avoid 
+? nt to avoid i
+? t to avoid it
+?  to avoid it 
+? to avoid it i
+? o avoid it is
+?  avoid it is 
+? avoid it is m
+? void it is mo
+? oid it is mor
+? id it is more
+? d it is more 
+?  it is more i
+? it is more im
+? t is more imp
+?  is more impo
+? is more impor
+? s more import
+?  more importa
+? more importan
+? ore important
+? re important 
+? e important t
+?  important to
+? important to 
+? mportant to d
+? portant to da
+? ortant to dat
+? rtant to data
+? more important
+? ore important 
+? re important t
+? e important to
+?  important to 
+? important to a
+? mportant to av
+? portant to avo
+? ortant to avoi
+? rtant to avoid
+? tant to avoid 
+? ant to avoid i
+? nt to avoid it
+? t to avoid it 
+?  to avoid it i
+? to avoid it is
+? o avoid it is 
+?  avoid it is m
+? avoid it is mo
+? void it is mor
+? oid it is more
+? id it is more 
+? d it is more i
+?  it is more im
+? it is more imp
+? t is more impo
+?  is more impor
+? is more import
+? s more importa
+?  more importan
+? more important
+? ore important 
+? re important t
+? e important to
+?  important to 
+? important to d
+? mportant to da
+? portant to dat
+? ortant to data
+? more important 
+? ore important t
+? re important to
+? e important to 
+?  important to a
+? important to av
+? mportant to avo
+? portant to avoi
+? ortant to avoid
+? rtant to avoid 
+? tant to avoid i
+? ant to avoid it
+? nt to avoid it 
+? t to avoid it i
+?  to avoid it is
+? to avoid it is 
+? o avoid it is m
+?  avoid it is mo
+? avoid it is mor
+? void it is more
+? oid it is more 
+? id it is more i
+? d it is more im
+?  it is more imp
+? it is more impo
+? t is more impor
+?  is more import
+? is more importa
+? s more importan
+?  more important
+? more important 
+? ore important t
+? re important to
+? e important to 
+?  important to d
+? important to da
+? mportant to dat
+? portant to data
+? more important t
+? ore important to
+? re important to 
+? e important to a
+?  important to av
+? important to avo
+? mportant to avoi
+? portant to avoid
+? ortant to avoid 
+? rtant to avoid i
+? tant to avoid it
+? ant to avoid it 
+? nt to avoid it i
+? t to avoid it is
+?  to avoid it is 
+? to avoid it is m
+? o avoid it is mo
+?  avoid it is mor
+? avoid it is more
+? void it is more 
+? oid it is more i
+? id it is more im
+? d it is more imp
+?  it is more impo
+? it is more impor
+? t is more import
+?  is more importa
+? is more importan
+? s more important
+?  more important 
+? more important t
+? ore important to
+? re important to 
+? e important to d
+?  important to da
+? important to dat
+? mportant to data
+? more important to
+? ore important to 
+? re important to a
+? e important to av
+?  important to avo
+? important to avoi
+? mportant to avoid
+? portant to avoid 
+? ortant to avoid i
+? rtant to avoid it
+? tant to avoid it 
+? ant to avoid it i
+? nt to avoid it is
+? t to avoid it is 
+?  to avoid it is m
+? to avoid it is mo
+? o avoid it is mor
+?  avoid it is more
+? avoid it is more 
+? void it is more i
+? oid it is more im
+? id it is more imp
+? d it is more impo
+?  it is more impor
+? it is more import
+? t is more importa
+?  is more importan
+? is more important
+? s more important 
+?  more important t
+? more important to
+? ore important to 
+? re important to d
+? e important to da
+?  important to dat
+? important to data
+? more important to 
+? ore important to a
+? re important to av
+? e important to avo
+?  important to avoi
+? important to avoid
+? mportant to avoid 
+? portant to avoid i
+? ortant to avoid it
+? rtant to avoid it 
+? tant to avoid it i
+? ant to avoid it is
+? nt to avoid it is 
+? t to avoid it is m
+?  to avoid it is mo
+? to avoid it is mor
+? o avoid it is more
+?  avoid it is more 
+? avoid it is more i
+? void it is more im
+? oid it is more imp
+? id it is more impo
+? d it is more impor
+?  it is more import
+? it is more importa
+? t is more importan
+?  is more important
+? is more important 
+? s more important t
+?  more important to
+? more important to 
+? ore important to d
+? re important to da
+? e important to dat
+?  important to data
+QUIT
