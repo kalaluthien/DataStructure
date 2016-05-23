@@ -31,16 +31,7 @@ public class List<T extends Comparable<T>>
     Node<T> curr = head;
 
     while (curr.hasNext())
-    {
-      T nextItem = curr.getNext().getItem();
-
-      if (item.compareTo(nextItem) < 0)
-        break;
-      else if (item.equals(nextItem))
-        return;
-
       curr = curr.getNext();
-    }
 
     curr.insertNext(item);
     numItems++;

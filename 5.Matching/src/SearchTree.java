@@ -8,7 +8,7 @@ public class SearchTree
 
   public SearchTree()
   {
-    root = null;
+    root = TreeNode.nil;
   }
 
   public void insert(String input, Position pos)
@@ -38,15 +38,16 @@ public class SearchTree
 
   public boolean isEmpty()
   {
-    return root == null;
+    return root.isNil();
   }
 }
 
 class TreeNode
 {
+  public static final TreeNode nil = new TreeNode(null);
+
   final String subs;
   List<Position> l;
-
   TreeNode leftChild, rightChild;
   int leftHeight, rightHeight;
 
@@ -54,7 +55,7 @@ class TreeNode
   {
     this.subs = subs;
     l = new List<Position>();
-    leftChild = rightChild = null;
+    leftChild = rightChild = nil;
     leftHeight = rightHeight = 0;
   }
 
@@ -64,7 +65,7 @@ class TreeNode
 
     if (comp < 0)
     {
-      if (leftChild == null)
+      if (leftChild.isNil())
         leftChild = new TreeNode(subs);
 
       leftChild = leftChild.insert(subs, pos);
@@ -72,7 +73,7 @@ class TreeNode
     }
     else if (comp > 0)
     {
-      if (rightChild == null)
+      if (rightChild.isNil())
         rightChild = new TreeNode(subs);
 
       rightChild = rightChild.insert(subs, pos);
@@ -90,14 +91,14 @@ class TreeNode
 
     if (comp < 0)
     {
-      if (leftChild == null)
+      if (leftChild.isNil())
         return SearchTree.empty;
 
       return leftChild.search(subs);
     }
     else if (comp > 0)
     {
-      if (rightChild == null)
+      if (rightChild.isNil())
         return SearchTree.empty;
 
       return rightChild.search(subs);
@@ -165,21 +166,32 @@ class TreeNode
 
   private int height()
   {
+    if (isNil())
+      return 0;
+
     if (leftHeight < rightHeight)
       return rightHeight + 1;
 
     return leftHeight + 1;
   }
 
+  public boolean isNil()
+  {
+    return this == nil;
+  }
+
   @Override
   public String toString()
   {
+    if (isNil())
+      return "";
+
     StringBuilder result = new StringBuilder(" " + subs);
 
-    if (leftChild != null)
+    if (!leftChild.isNil())
       result.append(leftChild.toString());
 
-    if (rightChild != null)
+    if (!rightChild.isNil())
       result.append(rightChild.toString());
 
     return result.toString();
