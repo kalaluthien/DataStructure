@@ -20,4 +20,4 @@ data - subway.txt
 input - in.txt
 output - out_sample.txt || 자기 코드의 output
 
-=> java SubwayTester subway.txt in.txt out_sample.txt
+=> java SubwayTester ../subway.txt ../in.txt ../out_sample.txt
