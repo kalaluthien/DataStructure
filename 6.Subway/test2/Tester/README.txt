@@ -1,23 +1,23 @@
-ÀÚ½ÅÀÇ ÄÚµå Ãâ·Â°ªÀÌ ½ÇÁ¦ Á¤´ä Áß ÇÏ³ªÀÎÁö Ã¼Å©ÇØÁÖ´Â ÇÁ·Î±×·¥ÀÔ´Ï´Ù.
+ï»¿ìžì‹ ì˜ ì½”ë“œ ì¶œë ¥ê°’ì´ ì‹¤ì œ ì •ë‹µ ì¤‘ í•˜ë‚˜ì¸ì§€ ì²´í¬í•´ì£¼ëŠ” í”„ë¡œê·¸ëž¨ìž…ë‹ˆë‹¤.
 
-½ÇÇà ¹æ¹ý
+ì‹¤í–‰ ë°©ë²•
 
-1. Æú´õ ¾ÈÀÇ .java ÆÄÀÏµéÀ» ¸ðµÎ ÄÄÆÄÀÏÇÑ´Ù.
-2. ´ÙÀ½ 3°³ÀÇ txt ÆÄÀÏ À§Ä¡¸¦ argument·Î ÁÖ°í SubwayTester¸¦ ½ÇÇà½ÃÅ²´Ù.
-	- ÀÚ½ÅÀÇ ÄÚµå¿¡ ³ÖÀº data
-	- ÀÚ½ÅÀÇ ÄÚµå¿¡ ³ÖÀº input
-	- ÀÚ½ÅÀÇ ÄÚµå°¡ Ãâ·ÂÇÑ output
+1. í´ë” ì•ˆì˜ .java íŒŒì¼ë“¤ì„ ëª¨ë‘ ì»´íŒŒì¼í•œë‹¤.
+2. ë‹¤ìŒ 3ê°œì˜ txt íŒŒì¼ ìœ„ì¹˜ë¥¼ argumentë¡œ ì£¼ê³  SubwayTesterë¥¼ ì‹¤í–‰ì‹œí‚¨ë‹¤.
+	- ìžì‹ ì˜ ì½”ë“œì— ë„£ì€ data
+	- ìžì‹ ì˜ ì½”ë“œì— ë„£ì€ input
+	- ìžì‹ ì˜ ì½”ë“œê°€ ì¶œë ¥í•œ output
 
-½ÇÇà ¿¹Á¦(linux)
+ì‹¤í–‰ ì˜ˆì œ(linux)
 
 cd Tester
 javac *.java
 java SubwayTester [data] [input] [output]
 
-»ùÇÃ ÆÄÀÏ
+ìƒ˜í”Œ íŒŒì¼
 
 data - subway.txt
 input - in.txt
-output - out_sample.txt || ÀÚ±â ÄÚµåÀÇ output
+output - out_sample.txt || ìžê¸° ì½”ë“œì˜ output
 
 => java SubwayTester subway.txt in.txt out_sample.txt
