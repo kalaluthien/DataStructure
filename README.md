@@ -8,8 +8,7 @@ DataStructure
 > Thanks to 컴공13, 컴공08
 
 #### Sites
-[Course Homepage](http://soar.snu.ac.kr/course.html)  
-[Assignment Homepage](http://soar.snu.ac.kr:8080/)
+[Course Homepage](http://soar.snu.ac.kr/course/)
 
 ## Contents
 1. **BigInteger**
