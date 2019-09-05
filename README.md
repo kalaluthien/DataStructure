@@ -26,7 +26,7 @@ DataStructure
 4. **Sorting**
    * [example code](https://github.com/kalaluthien/DataStructure/tree/Sorting)
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/4.Sorting/src)
-   * [test cpp code](https://github.com/kalaluthien/DataStructure/tree/master/4.Sorting/test) thanks to 김희훈
+   * [test cpp code](https://github.com/kalaluthien/DataStructure/tree/master/4.Sorting/test) thanks to @csehydrogen
 5. **Matching**
    * [example code](https://github.com/kalaluthien/DataStructure/tree/Matching)
    * [skeleton code](https://github.com/kalaluthien/DataStructure/tree/master/5.Matching/src)
